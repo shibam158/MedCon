@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns and Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-container h2 {
+            text-align: center;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container label {
+            margin-bottom: 8px;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Returns Form</h2>
+    <form>
+        <label for="returnName">Full Name:</label>
+        <input type="text" id="returnName" placeholder="Your Full Name" required>
+
+        <label for="returnOrderNumber">Order Number:</label>
+        <input type="text" id="returnOrderNumber" placeholder="Order Number" required>
+
+        <label for="returnReason">Reason for Return:</label>
+        <textarea id="returnReason" placeholder="Please provide a reason for your return" required></textarea>
+
+        <button type="submit">Submit Return</button>
+    </form>
+</div>
+
+<div class="form-container">
+    <h2>Order Form</h2>
+    <form>
+        <label for="orderName">Full Name:</label>
+        <input type="text" id="orderName" placeholder="Your Full Name" required>
+
+        <label for="orderAddress">Shipping Address:</label>
+        <textarea id="orderAddress" placeholder="Enter your shipping address" required></textarea>
+
+        <label for="orderItems">Order Items:</label>
+        <textarea id="orderItems" placeholder="List the items you want to order" required></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
+</body>
+</html>
